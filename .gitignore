@@ -1,5 +1,5 @@
 *
-!.gitignore
+**/
+.gitignore
 
-!.config/
-!~/.config/alacritty/
+!.tmux.conf
