@@ -1,0 +1,11 @@
+#!/bin/zsh
+SESSION=`basename $PWD`
+
+tmux -2 new-session -d -s $SESSION
+
+tmux rename-window -t $SESSION:1 vim
+tmux new-window -t $SESSION -a -n server
+tmux new-window -t $SESSION -a -n general
+tmux new-window -t $SESSION -a -n logs
+tmux select-window -t $SESSION:1
+tmux -2 attach -t $SESSION
