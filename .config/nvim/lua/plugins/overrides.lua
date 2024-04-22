@@ -6,6 +6,7 @@
 -- * override the configuration of LazyVim plugins
 return {
   -- disable
+  { "mbbill/undotree" },
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
